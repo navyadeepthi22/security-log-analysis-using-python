@@ -1,41 +1,42 @@
 # Security Log Analysis Using Python
 
-## Project Objective
-To analyze Windows Security Event Logs using Python in order to detect suspicious authentication activity such as repeated failed login attempts that may indicate brute-force attacks.
+## Overview
+This project demonstrates how Python can be used by SOC analysts to analyze Windows Security Event Logs and identify suspicious authentication behavior such as repeated failed login attempts that may indicate brute-force attacks.
+
+The project simulates a real-world SOC scenario where automation is used to reduce manual log review and speed up alert triage.
 
 ---
 
-## Background
-SOC analysts frequently deal with large volumes of authentication logs. Manual review of these logs is time-consuming and error-prone. Automating log analysis using Python helps identify suspicious patterns quickly and improves investigation efficiency.
-
-This project demonstrates a simple Python-based approach to analyzing Windows Security logs in a SOC-style workflow.
+## Project Objective
+To analyze Windows Security Event Logs using Python and apply basic detection logic to identify abnormal authentication patterns relevant to SOC investigations.
 
 ---
 
 ## Data Collection
-Windows Security Event Logs were generated on a personal system by performing login and logoff activities. These logs were exported from Event Viewer into CSV format for offline analysis.
+Windows Security Event Logs were generated on a personal test system by performing login and logoff activities.  
+These logs were exported from Windows Event Viewer into CSV format for offline analysis using Python.
 
-The log file contained the following fields:
+The exported log data included:
 - Event ID
 - Timestamp
-- Account Name
-- Logon Type
+- Account name
+- Logon type
 
 ---
 
-## Tools and Technologies
-- **Operating System:** Windows  
-- **Programming Language:** Python  
-- **Log Format:** CSV (exported Windows Security logs)
+## Tools and Technologies Used
+- Operating System: Windows  
+- Programming Language: Python  
+- Log Source: Windows Security Event Logs (CSV format)
 
-### Python Libraries Used
-- `csv` – for reading and parsing log files  
-- `collections` – for counting event occurrences  
+### Python Libraries
+- csv – used for reading and parsing log files  
+- collections – used for counting event occurrences  
 
 ---
 
 ## Python Script Overview
-A Python script named `log_analyzer.py` was created to parse the exported security logs and count authentication-related events.
+A Python script was written to parse the exported Windows Security logs and count authentication-related Event IDs.
 
 ### Python Code
 ```python
