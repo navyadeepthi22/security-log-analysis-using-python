@@ -75,6 +75,7 @@ The following logic was used to identify suspicious activity:
 Such patterns may indicate brute-force attacks or unauthorized access attempts.
 
 ## Output and Findings
+![Python Script Output](output.png)
 The script outputs the total count of each authentication-related Event ID. This provides quick visibility into authentication trends and allows SOC analysts to identify abnormal behavior efficiently.
 
 Repeated failed login attempts were clearly visible through event frequency analysis.
@@ -100,4 +101,5 @@ This project demonstrates how SOC analysts can use Python automation to:
 
 ## Conclusion
 This project highlights the effectiveness of Python automation in SOC environments by demonstrating how Windows Security Event Logs can be analyzed efficiently to detect suspicious authentication activity and support timely security investigations.
+
 
