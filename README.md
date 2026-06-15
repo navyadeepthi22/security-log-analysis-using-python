@@ -49,4 +49,3 @@ Suspicious authentication behavior can be efficiently identified and escalated f
 
 ---
 
-## Repository Structure
